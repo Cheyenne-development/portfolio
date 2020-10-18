@@ -1,0 +1,126 @@
+/* General styles: fonts, font-size things of that nature */
+
+
+body {
+    background-color:floralwhite;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:darkslategrey;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #403933;
+  color:antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:18px;
+}
+
+section, article {
+  padding: 0 18%;
+	  margin: 80px 0;
+    }
+
+/* header and footer sizes */
+header {
+  height: 140px;
+}
+
+footer {
+  height:90px;
+  }
+
+
+
+/* objects within header and footer including nav bar and items on it */
+.name {
+  padding:20px;
+  font-size: 52px;
+  margin: 0px 0px 0px 80px;
+}
+
+.navbar, .nav-elements {
+  height:140px;
+  width:170px;
+   float:right;
+      font-size: 20px;
+}
+
+.nav-elements {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:black;
+}
+
+
+
+header h2 {
+  margin:0 0 0 80px;
+}
+
+
+  footer p {
+    padding:8px 0 0 0;
+  }
+
+
+/* header text alignment and font size */
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 26px; }
+h3 { font-size: 18px; }
+
+
+/* line spacing for main text border styling */ 
+p, li {
+  line-height: 1.5;
+}
+
+img {
+  width:100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.about-me {
+  border-top: 1px solid black;
+  padding-top: 60px;
+  }
+
+  hr {
+    margin:60px 0 0 0;
+  border-top: 1px solid black;
+  }
+
+
+.contact {
+  padding-top:60px;
+}
+
+/* Link styling */
+
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+a:link { color: Blue; }
+a:visited { color: darkslateblue; }
+a:hover { color: lightblue; }
+a:active { color: lightblue; }
+a:hover {
+	text-decoration: underline;	
+}
+
+li a {
+  display: block;
+  font-size:16px;
+  line-height:2;
+  }
+ .nav-elements li a:hover {
+    background-color:grey
+  }
