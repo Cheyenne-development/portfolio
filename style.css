@@ -1,155 +1,136 @@
-/* General styles: fonts, font-size things of that nature */
+/* Header, footer, and navbar alignments */
 
-
-body {
-    background-color:floralwhite;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 18px;
-    color:darkslategrey;
-}
-
-
-header, footer {
+header,
+footer {
+  margin-top: 0;
   text-align: center;
   background-color: #403933;
-  color:antiquewhite;
+  color: antiquewhite;
   font-family: 'Courier New', Courier, monospace;
-  font-size:18px;
+  font-size: 18px;
 }
 
-section {
-   padding-top: 10px;
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 16px;
+  font-size: 50px;
+}
+
+/* navigation */
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 10px 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Flex boxes */
+
+.group {
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* image and text formatting */
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  color:darkslategrey;
 }
 
 .group img {
   width: 100%;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
- }
+.round-borders {
+  border-radius: 10px;
+}
 
- .wrapper {
-   border-top: 1px solid black;
- }
+iframe {
+  margin-top: 20px;
+  width: 100%;
+}
 
+h3 {
+  text-align: center;
+}
 
-/* flexbox management */
+/* desktop view */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+    padding: 10px 0 20px 0;
+  }
 
   .item {
     flex: 1;
     margin: 10px;
   }
 
-  
-/* header and footer sizes */
-header {
-  height: 140px;
-  margin-bottom: 10px;
-  
-}
-
-footer {
-  height:90px;
+  .item-double {
+    flex: 2;
+    margin: 10px;
   }
 
-
-
-/* objects within header and footer */
-.name {
-  padding: 10px;
-  margin: 0px 0px 0px 80px;
-}
-
-header h1 {
-  font-size: 38px;
-}
-
-header h2 {
-  font-size: 28px;
-}
-
-
-  footer p {
-    padding:8px 0 0 0;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
   }
 
-
-/* header text alignment and font size */
-
-h1, h2, h3 {
-  text-align: center;
-}
-
-h1 { font-size: 28px; }
-h2 { font-size: 26px; }
-h3 { font-size: 18px; }
-
-
-/* line spacing for main text border styling */ 
-p, li {
-  line-height: 1.25;
-}
-
-img {
-   width:100%;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-
-
-.contact {
-  padding-top:60px;
-}
-
-/* Link styling */
-
-a {
-	font-weight: 700;
-	text-decoration: none;	
-}
-a:link { color: Blue; }
-a:visited { color: darkslateblue; }
-a:hover { color: lightblue; }
-a:active { color: lightblue; }
-a:hover {
-	text-decoration: underline;	
-}
-
-li a {
-  display: block;
-  font-size:16px;
-  line-height:2;
-  }
- .nav-elements li a:hover {
-    background-color:grey
+  header h1 {
+    font-size: 38px;
+    margin: 14px 0;
+    padding-top: 6px;
   }
 
-/* desktop view */
-
-@media all and (min-width: 800px) {
-  section {
-     padding: 10px 10% 0px 10%;
+  header nav {
+    margin-top: 14px;
   }
 
-   .about {
-    flex-direction: row;
+  header nav ul li a:hover {
+    color: #bdbdbd;
   }
 
-  .custom {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-
- 
 }
 
+/* form styling */
 
+form {
+  padding-right: 5px;
+}
 
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-
+form textarea {
+  height: 160px;
+}
