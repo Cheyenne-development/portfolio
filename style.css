@@ -1,4 +1,9 @@
 /* Header, footer, and navbar alignments */
+main {
+  margin: 20px 15px 0px 15px;
+}
+
+
 
 header,
 footer {
@@ -81,7 +86,7 @@ h3, h4 {
 
 @media all and (min-width: 800px) {
   section {
-    padding: 0 10%;
+    padding: 0 8%;
   }
 
   .group {
